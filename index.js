@@ -102,7 +102,7 @@ let placeNode = (e) => {
   x = Math.floor(x/15);
   y = Math.floor(y/15);
 
-  board[x][y] = 1;
+  board[x][y] = board[x][y] == 1 ? 0 : 1;
   drawGrid();
 }
 
